@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baza {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+.card-body-bot {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 2.5rem;
+}
+
+.likes,
+.followers,
+.photos {
+  margin-right: 5rem;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+  font-weight: bold;
+}
+
+.levo {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px 0px 0px 10px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.desno {
+  background: url("../images/image-header-mobile.jpg"), hsl(277, 64%, 62%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  border-radius: 0px 10px 10px 0px;
+}
+
+.row {
+  width: 100%;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  padding-top: 1rem;
+  padding-right: 9rem;
+}
+
+.card-body-bot p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.card-body-bot h5 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+@media only screen and (max-width: 575px) {
+  * {
+    margin: 0;
+  }
+
+  body {
+    height: 80vh;
+    width: 100%;
+  }
+
+  .row {
+    padding: 1rem;
+  }
+
+  .desno {
+    margin-top: 160px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .levo {
+    border-radius: 0px 0px 10px 10px;
+    height: 550px;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .main-p {
+    margin: 1rem !important;
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem;
+  }
+
+  h1,
+  .main-p {
+    text-align: center;
+    position: relative;
+    top: 2rem;
+
+    max-width: fit-content;
+  }
+
+  h1 {
+    font-size: 28px;
+    left: 10px;
+  }
+
+  .card-body-bot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .likes,
+  .followers,
+  .photos {
+    margin: 0;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
